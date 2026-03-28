@@ -25,7 +25,7 @@ Documents → Loaders → Chunking → Embeddings → FAISS → Retriever → LL
 
 ## Project Structure
 
-`
+```
 .
 ├── app.py                  # Main entry point
 ├── src/
@@ -38,7 +38,7 @@ Documents → Loaders → Chunking → Embeddings → FAISS → Retriever → LL
 ├── faiss_store/            # Saved FAISS index
 ├── requirements.txt
 └── README.md
-`
+```
 
 ---
 
