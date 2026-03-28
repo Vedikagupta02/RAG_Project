@@ -1,4 +1,4 @@
-﻿# 🔍 RAG-Based Multi-Document Question Answering System
+# 🔍 RAG-Based Multi-Document Question Answering System
 
 [Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
 [FAISS](https://img.shields.io/badge/VectorStore-FAISS-green)
@@ -28,6 +28,7 @@ Documents → Loaders → Chunking → Embeddings → FAISS → Retriever → LL
 ```
 .
 ├── app.py                  # Main entry point
+├── streamlit_app.py        # Interactive Web UI (Streamlit)
 ├── src/
 │   ├── data_loader.py      # Multi-format document ingestion
 │   ├── vectorstore.py      # FAISS-based vector storage
@@ -144,9 +145,15 @@ os.environ[GROQ_API_KEY] = your_api_key
 
 ## Running the Project
 
-`
+**1. Run the Command-Line Interface**
+```bash
 python app.py
-`
+```
+
+**2. Run the Interactive Web App (Streamlit)**
+```bash
+streamlit run streamlit_app.py
+```
 
 ---
 
@@ -213,7 +220,7 @@ Confidence: 0.87
 * Hybrid search (keyword + vector)
 * Re-ranking models
 * FastAPI backend deployment
-* Streamlit / React UI
+* ~~Streamlit / React UI~~ (Completed! ✅)
 * Agentic RAG integration
 
 ---
